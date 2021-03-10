@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #343131;
+}
+h2{
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 30px 50px;
+    margin:20px 20px ;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/cover.jpg);
+    width: 100%;
+    height: 60vh;
+    padding-top: 10px;
+    background-size: cover;
+    position: relative;
+    overflow-y: scroll;
+}
+.navbar{
+    width:100%;
+    height: auto;
+}
+.navbar-brand img{
+    height: 70px;
+    width: auto;
+}
+.navbar-toggler-icon{
+    background-image: url(images/menu.png);
+    opacity: 80%;
+}
+.navbar-nav li{
+    padding: 10px 20px;
+}
+.navbar-nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#fff;
+}
+.navbar-nav li a:hover{
+    background-color: #fff;
+    color: #000;
+    padding: 9px 19px;
+    transition: 0.9s;
+}
+.main-body{
+    color: #fff;
+    padding-top: 5px;
+    width: 90%;
+}
+.main-body p{
+    color: #ff8c00;
+    font-size:2vw;
+    font-style: italic;
+}
+.main-body h1{
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 20px;
+}
+a.btnn{
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1rem;
+    padding:10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    margin-right: 10px;
+    margin:10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+a.btnn2{
+    background-color: #fff;
+    color: #ff8c00;
+    font-size: 1rem;
+    padding:10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    margin-right: 10px;
+    margin:10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+a.btnn:hover{
+    background:#fff;
+    color:#ff8c00;
+    transition: 0.5s;
+    text-shadow: none;
+}
+a.btnn2:hover{
+    text-shadow: none;
+    transition: 0.5s;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 360px) {
+  
+    .main-body{
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    .main-body h1{
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+        padding-bottom: 20px;
+    }
+    .main-body p{
+        font-size:2vw;
+        font-style: italic;
+    }
+
+  }
+  @media screen and (max-width:359px){
+    .main-body h1{
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+        padding-bottom: 20px;
+    }
+      .navbar-toggler{
+          display: none;
+      }
+      .navbar-brand img{
+          height: 50%;
+          width: 50%;
+      }
+      .main-body p{
+        color: #fff;
+        font-size:20px;
+    }
+
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 995px) {
+    .main-body{
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    .main-body h1 {
+      font-size: 50px;
+    }
+    .main-body p{
+        color: #ff8c00;
+        font-size:20px;
+        font-style: italic;
+    }
+  }
+
+   /*----------------------- Pricing section starts -------------------------- */
+
+   
+ .pricing{
+       height: auto;
+       width: 100%;
+       margin: 20px auto;
+       justify-content: center;
+       align-items: center;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background-color:#fff;
+    border-bottom: 5px solid #ff8c00;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.card-head img{
+    width: 100%;
+}
+.card-body{
+    color: #333;
+} 
+.card-body h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#more {display: none;}
+
+.card-foot{
+    background-color: #333;
+    text-align: center;
+}
+.card-foot a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* -----------------slider---------- */
+.slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    margin: 0 5px;
+    height: 100%;
+  }
+
+
+
+
+
+
+
+
+   /*----------------------- Packages section Ends -------------------------- */
+
+   
+ 
+  /*----------------------- About section starts -------------------------- */
+.left-text h3{
+  font-size: 2.7rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.left-text p{
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 10px 5px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+ /*----------------------- About section Ends -------------------------- */
+
+ /* -----footer ------*/
+ .site-footer
+ {
+   background-color:#26272b;
+   padding:45px 0 20px;
+   font-size:15px;
+   line-height:24px;
+   color:#737373;
+ }
+ .site-footer hr
+ {
+   border-top-color:#bbb;
+   opacity:0.5
+ }
+ .site-footer hr.small
+ {
+   margin:20px 0
+ }
+ .site-footer h6
+ {
+   color:#fff;
+   font-size:16px;
+   text-transform:uppercase;
+   margin-top:5px;
+   letter-spacing:2px
+ }
+ .site-footer a
+ {
+   color:#737373;
+ }
+ .site-footer a:hover
+ {
+   color:#3366cc;
+   text-decoration:none;
+ }
+ .footer-links
+ {
+   padding-left:0;
+   list-style:none
+ }
+ .footer-links li
+ {
+   display:block
+ }
+ .footer-links a
+ {
+   color:#737373
+ }
+ .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+ {
+   color:#3366cc;
+   text-decoration:none;
+ }
+ .footer-links.inline li
+ {
+   display:inline-block
+ }
+ .site-footer .social-icons
+ {
+   text-align:right
+ }
+ .site-footer .social-icons a
+ {
+   width:40px;
+   height:40px;
+   line-height:40px;
+   margin-left:6px;
+   margin-right:0;
+   border-radius:100%;
+   background-color:#33353d
+ }
+ .copyright-text
+ {
+   margin:0
+ }
+ @media (max-width:991px)
+ {
+   .site-footer [class^=col-]
+   {
+     margin-bottom:30px
+   }
+ }
+ @media (max-width:767px)
+ {
+   .site-footer
+   {
+     padding-bottom:0
+   }
+   .site-footer .copyright-text,.site-footer .social-icons
+   {
+     text-align:center
+   }
+ }
+ .social-icons
+ {
+   padding-left:0;
+   margin-bottom:0;
+   list-style:none
+ }
+ .social-icons li
+ {
+   display:inline-block;
+   margin-bottom:4px
+ }
+ .social-icons li.title
+ {
+   margin-right:15px;
+   text-transform:uppercase;
+   color:#96a2b2;
+   font-weight:700;
+   font-size:13px
+ }
+ .social-icons a{
+   background-color:#eceeef;
+   color:#818a91;
+   font-size:16px;
+   display:inline-block;
+   line-height:44px;
+   width:44px;
+   height:44px;
+   text-align:center;
+   margin-right:8px;
+   border-radius:100%;
+   -webkit-transition:all .2s linear;
+   -o-transition:all .2s linear;
+   transition:all .2s linear
+ }
+ .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+ {
+   color:#fff;
+   background-color:#29aafe
+ }
+ .social-icons.size-sm a
+ {
+   line-height:34px;
+   height:34px;
+   width:34px;
+   font-size:14px
+ }
+ .social-icons a.facebook:hover
+ {
+   background-color:#3b5998
+ }
+ .social-icons a.twitter:hover
+ {
+   background-color:#00aced
+ }
+ .social-icons a.linkedin:hover
+ {
+   background-color:#007bb6
+ }
+ .social-icons a.dribbble:hover
+ {
+   background-color:#ea4c89
+ }
+ @media (max-width:767px)
+ {
+   .social-icons li.title
+   {
+     display:block;
+     margin-right:0;
+     font-weight:600
+   }
+ }
+
